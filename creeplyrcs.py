@@ -1,3 +1,5 @@
+#Just a stupid lyrcs code that plays Creep, if you want to try copy and paste this or go to my releases
+
 import sys
 import os
 import tkinter as tk
