@@ -9,10 +9,10 @@ from PIL import Image, ImageTk
 # Caminhos da música e do fundo
 if hasattr(sys, "_MEIPASS"):
     musica_path = os.path.join(sys._MEIPASS, "Radiohead - Creep [XFkzRNyygfk].mp3")
-    fundo_path = os.path.join(sys._MEIPASS, "lain3.jpg")
+    fundo_path = os.path.join(sys._MEIPASS, "crepe.jpg")
 else:
     musica_path = "Radiohead - Creep [XFkzRNyygfk].mp3"
-    fundo_path = "lain3.jpg"
+    fundo_path = "crepe.jpg"
 
 # Inicializar Pygame e tocar música
 pygame.mixer.init()
@@ -21,7 +21,7 @@ pygame.mixer.music.play()
 
 # Criar janela Tkinter
 janela = tk.Tk()
-janela.geometry("500x300")
+janela.geometry("500x400")
 janela.title("Creep - Radiohead")
 janela.eval('tk::PlaceWindow . center')
 
