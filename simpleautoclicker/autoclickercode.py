@@ -151,6 +151,8 @@ tuto.place(x=60, y=80)
 ###SEILA###
 
 def ligar():
+    if ativo.is_set():
+        return
     ativo.set()
     threading.Thread(
         target=toast,
@@ -161,6 +163,8 @@ def ligar():
 
 
 def desligar():
+    if not ativo.is_set():
+        return
     ativo.clear()
     threading.Thread(
         target=toast, 
